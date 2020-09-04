@@ -1,68 +1,64 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# InformationStation
 
-## Available Scripts
+## Project Description
 
-In the project directory, you can run:
+A blog site to post any information you may want to share or just sit back and read/follow any posts that might catch your eye.
 
-### `npm start`
+## API and Data Sample
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Wireframes
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Web:
 
-### `npm test`
+<img src="https://i.imgur.com/UaPLTvS.png">
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Tablet:
 
-### `npm run build`
+<img src="https://i.imgur.com/6rhRtTt.png">
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Mobile:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+<img src="https://i.imgur.com/HpK6j2w.png">
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### MVP
 
-### `npm run eject`
+- Obtain infromation from the airtable API
+- Render data on page
+- Add a nav bar with working links
+- Add a search bar (or button)
+- Add sections for each blog post
+- Add a button to let users submit information to be presented onto the blog homepage
+- Add styling
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### PostMVP
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Add additional styling
+- Add an about the developer page
+- Create an emoji wheel (i.e Facebook's posts emoji likes) or an up/down vote button
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Project Schedule
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+|  Day | Deliverable | Status
+|---|---| ---|
+|September 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
+|September 13| Project Approval | Incomplete
+|September 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|September 14| Pseudocode / actual code | Incomplete
+|September 15| Initial Clickable Model  | Incomplete
+|September 16| MVP | Incomplete
+|September 17| Presentations | Incomplete
 
-## Learn More
+## Timeframes
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Adding Form | H | 10 hrs| - hrs | - hrs |
+| Working with API | H | 10 hrs| - hrs | - hrs |
+| Creating homepage | M | 8 hrs | - hrs | - hrs |
+| Adding functional buttons | H | 8 hrs | - hrs | - hrs |
+| Styling | M | 8 hrs | - hrs | - hrs |
+| Total | H | 44 hrs| - hrs | - hrs |
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Code Snippet
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Change Log
