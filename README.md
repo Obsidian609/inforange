@@ -5,7 +5,7 @@
 A blog site to post any information you may want to share or just sit back and read/follow any posts that might catch your eye.
 
 ## API and Data Sample
-
+```js
 "records": [
         {
             "id": "recul0WKSOPd1vOhY",
@@ -17,8 +17,8 @@ A blog site to post any information you may want to share or just sit back and r
             },
             "createdTime": "2006-01-20T18:50:20.000Z"
         },
-        {
-
+]
+```
 
 ## Component Hierarchy
 
