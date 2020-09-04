@@ -1,4 +1,4 @@
-# InformationStation
+# InfoRange
 
 ## Project Description
 
@@ -50,14 +50,14 @@ Mobile:
 
 ## Timeframes
 
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 10 hrs| - hrs | - hrs |
-| Working with API | H | 10 hrs| - hrs | - hrs |
-| Creating homepage | M | 8 hrs | - hrs | - hrs |
-| Adding functional buttons | H | 8 hrs | - hrs | - hrs |
-| Styling | M | 8 hrs | - hrs | - hrs |
-| Total | H | 44 hrs| - hrs | - hrs |
+| Component | Priority | Estimated Time | Time Invested |
+| --- | :---: |  :---: | :---: |
+| Adding Form | H | 10 hrs| - hrs |
+| Working with API | H | 10 hrs| - hrs |
+| Creating homepage | M | 8 hrs | - hrs |
+| Adding functional buttons | H | 8 hrs | - hrs |
+| Styling | M | 8 hrs | - hrs |
+| Total | H | 44 hrs| - hrs |
 
 ## Code Snippet
 
