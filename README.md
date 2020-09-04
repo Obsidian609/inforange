@@ -6,6 +6,24 @@ A blog site to post any information you may want to share or just sit back and r
 
 ## API and Data Sample
 
+"records": [
+        {
+            "id": "recul0WKSOPd1vOhY",
+            "fields": {
+                "title": "It's the start..",
+                "text": "..of something new! It feels so right to be here with you",
+                "author": "Gabriella and Troy",
+                "created_at": "2020-09-04"
+            },
+            "createdTime": "2006-01-20T18:50:20.000Z"
+        },
+        {
+
+
+## Component Hierarchy
+
+<img src="https://i.imgur.com/2shBG0K.png">
+
 ## Wireframes
 
 Web:
@@ -40,13 +58,13 @@ Mobile:
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|September 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|September 13| Project Approval | Incomplete
-|September 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|September 14| Pseudocode / actual code | Incomplete
-|September 15| Initial Clickable Model  | Incomplete
-|September 16| MVP | Incomplete
-|September 17| Presentations | Incomplete
+|September 4| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
+|September 4| Project Approval | Complete
+|September 7| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|September 8| Pseudocode / actual code | Incomplete
+|September 9| Initial Clickable Model  | Incomplete
+|September 10| MVP | Incomplete
+|September 11| Presentations | Incomplete
 
 ## Timeframes
 
