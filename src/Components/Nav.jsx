@@ -1,25 +1,24 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import '../App.css'
 
 function Nav () {
+    const navStyle = {
+        color: 'black',
+        textDecoration: 'none'
+    }
+
     return (
         <nav>
-            <Link to='/'>
+            <Link style={navStyle} to='/'>
             <h1 className='title'>InfoRange</h1>
             </Link>
             <ul className='navlinks'>
-                <Link to='./UpdatePosts'>
-                    <li>Submit Post</li>
+                <Link style={navStyle} to='/CreatePosts'>
+                    <li>Create Post</li>
                 </Link>
-                <Link to='./'>
-                <li>Search</li>
-                </Link>
-                <Link to='./'>
-                <li>Next Stop</li>
-                </Link>
-                <Link to='./AboutMe'>
-                <li>About Me</li>
+                    <li><a style={navStyle} href="http://randomfactgenerator.net/" target="_blank">Random Info</a></li>
+                <Link style={navStyle} to='/AboutMe'>
+                    <li>About Me</li>
                 </Link>
             </ul>
             </nav>

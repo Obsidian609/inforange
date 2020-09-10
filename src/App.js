@@ -1,18 +1,20 @@
 import React, { useEffect, useState } from 'react';
-import { Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import axios from 'axios';
 import './App.css';
 import Nav from './Components/Nav'
 import Posts from './Components/Posts'
-import CreatePosts from './Components/CreatePost'
-import UpdatePosts from './Components/UpdatePosts'
+import AboutMe from './Components/AboutMe'
+import CreatePost from './Components/CreatePost'
+import UpdatePost from './Components/UpdatePost'
 
 
 function App(props) {
   const [posts, setPosts] = useState([]);
+  const [fetchPosts, setFetchPosts] = useState(false);
   useEffect(() => {
     const getPosts = async () => {
-      const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/inforange?Grid%20View`;
+      const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/inforange`;
       const response = await axios.get(airtableURL, {
         headers: {
           'Authorization': `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
@@ -21,14 +23,22 @@ function App(props) {
       setPosts(response.data.records);
     }
     getPosts();
-  }, []);
+  }, [fetchPosts]);
 
   return (
     <div className="App">
       <Nav />
-      <Posts />
+      <Route path="/AboutMe" >
+        <AboutMe />
+      </Route>
+      <Route path="/" exact>
+      <Posts posts={ posts }/>
+      </Route>
+      <Route path="/CreatePosts">
+        <CreatePost />
+      </Route>
     </div>
-  );
+      );
 }
 
 export default App;
