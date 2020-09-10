@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import { Route } from 'react-router-dom'
 import axios from 'axios';
 import './App.css';
+import Nav from './Components/Nav'
+import Posts from './Components/Posts'
+import CreatePosts from './Components/CreatePost'
+import UpdatePosts from './Components/UpdatePosts'
+
 
 function App(props) {
   const [posts, setPosts] = useState([]);
@@ -19,7 +25,8 @@ function App(props) {
 
   return (
     <div className="App">
-     <h1> InfoRange </h1>
+      <Nav />
+      <Posts />
     </div>
   );
 }
