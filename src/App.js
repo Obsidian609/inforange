@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { Route} from 'react-router-dom'
 import axios from 'axios';
 import './App.css';
 import Nav from './Components/Nav'
@@ -7,7 +7,6 @@ import Posts from './Components/Posts'
 import AboutMe from './Components/AboutMe'
 import CreatePost from './Components/CreatePost'
 import UpdatePost from './Components/UpdatePost'
-
 
 function App(props) {
   const [posts, setPosts] = useState([]);
@@ -28,14 +27,14 @@ function App(props) {
   return (
     <div className="App">
       <Nav />
-      <Route path="/AboutMe" >
+      <Route path="/aboutme" >
         <AboutMe />
       </Route>
       <Route path="/" exact>
       <Posts posts={ posts }/>
       </Route>
-      <Route path="/CreatePosts">
-        <CreatePost />
+      <Route path="/createposts">
+        <CreatePost setFetchPosts= { setFetchPosts }/>
       </Route>
     </div>
       );
