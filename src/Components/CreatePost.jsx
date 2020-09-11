@@ -37,7 +37,7 @@ function CreatePost(props) {
     createPost(fields);
     setFetchPosts(prevFetch => !prevFetch)
   }
-
+//
   const handleDelete = async () => {
     const airTableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/inforange/`
     await axios.delete(airTableURL, { 
@@ -47,7 +47,7 @@ function CreatePost(props) {
     });
     setFetchPosts(!fetchPosts);
 }
-
+//
   return (
     <div>
      <form onSubmit={(e) => handleSubmit(e)}>
