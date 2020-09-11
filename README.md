@@ -50,7 +50,7 @@ Mobile:
 
 #### PostMVP
 
-- Add additional styling
+- Add additional styling (make the nav bar dropdown(to the side) when on different media query)
 - Add an about the developer page
 - Create an emoji wheel (i.e Facebook's posts emoji likes) or an up/down vote button
 
