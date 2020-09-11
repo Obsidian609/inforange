@@ -60,22 +60,22 @@ Mobile:
 |---|---| ---|
 |September 4| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |September 4| Project Approval | Complete
-|September 7| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|September 8| Pseudocode / actual code | Incomplete
-|September 9| Initial Clickable Model  | Incomplete
-|September 10| MVP | Incomplete
-|September 11| Presentations | Incomplete
+|September 7| Core Application Structure (HTML, CSS, etc.) | Complete
+|September 8| Pseudocode / actual code | Complete
+|September 9| Initial Clickable Model  | Complete
+|September 10| MVP | Complete
+|September 11| Presentations | Complete
 
 ## Timeframes
 
 | Component | Priority | Estimated Time | Time Invested |
 | --- | :---: |  :---: | :---: |
-| Adding Form | H | 10 hrs| - hrs |
-| Working with API | H | 10 hrs| - hrs |
-| Creating homepage | M | 8 hrs | - hrs |
-| Adding functional buttons | H | 8 hrs | - hrs |
-| Styling | M | 8 hrs | - hrs |
-| Total | H | 44 hrs| - hrs |
+| Adding Form | H | 10 hrs| 12 hrs |
+| Working with API | H | 10 hrs| 10 hrs |
+| Creating homepage | M | 8 hrs | 12 hrs |
+| Adding functional buttons | H | 8 hrs | 8 hrs |
+| Styling | M | 8 hrs | 8 hrs |
+| Total | H | 44 hrs| 50 hrs |
 
 ## Code Snippet
 
