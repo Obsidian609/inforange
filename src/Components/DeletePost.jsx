@@ -1,6 +1,5 @@
 import React from 'react';
 import axios from 'axios';
-import CreatePost from './CreatePost'
 
 function UpdatePost(props) {
   const { fetchPosts, setFetchPosts, post} = props;
@@ -17,11 +16,6 @@ function UpdatePost(props) {
 
   return (
     <div>
-        <CreatePost 
-            fetchPosts={fetchPosts}
-            setFetchPosts={setFetchPosts}
-            post={post}
-        />
      <button onClick={handleDelete}>Delete Post</button>
     </div>
   );

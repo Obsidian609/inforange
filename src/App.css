@@ -1,5 +1,13 @@
-@media screen and (min-width: 680px) {
-    .app {
+@media screen and (max-width: 960px) {
+    .navDiv {
         background-color: red;
     }
 }
+
+@media screen and (max-width: 875px) {
+    .navDiv {
+        background-color: purple;
+    }
+}
+
+

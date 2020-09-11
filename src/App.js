@@ -19,6 +19,7 @@ function App() {
 
   const newPosts= {
     border: '10px solid black',
+    paddingTop: '10px',
   }
 
   useEffect(() => {
@@ -37,7 +38,7 @@ function App() {
   return (
     <div className='app' style={app}>
       <Nav />
-      <div style={newPosts}>
+      <div className='navDiv' style={newPosts}>
       <Route path="/aboutme" >
         <AboutMe />
       </Route>

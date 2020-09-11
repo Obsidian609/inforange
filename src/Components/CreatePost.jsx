@@ -9,7 +9,9 @@ function CreatePost(props) {
 
   const posts = {
     display: 'flex',
-    margin: '20px 530px',
+    margin: '0 auto',
+    marginTop: '5px',
+    marginBottom: '15px',
     justifyContent: 'space-around',
     alignItems: 'center',
   }
