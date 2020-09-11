@@ -22,10 +22,7 @@ function CreatePost(props) {
         'Content-Type': 'application/json',
       },
     });
-    props.setFetchPosts(!props.fetchPosts);
-        setTitle('')
-        setText('')
-        setAuthor('')
+    setFetchPosts(response)
   }
 
   const handleSubmit = async (e) => {
