@@ -17,7 +17,6 @@ function App() {
   }
 
   const newPosts= {
-    border: '10px solid black',
     paddingTop: '10px',
   }
 

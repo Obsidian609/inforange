@@ -13,6 +13,8 @@ function Nav () {
         minHeight: '10vh',
         background: 'rgb(2, 87, 2)',
         marginBottom: '15px',
+        border: '4px solid black',
+
     }
     const navLinks = {
         width: '50%',
