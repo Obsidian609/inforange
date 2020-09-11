@@ -6,7 +6,6 @@ import Nav from './Components/Nav'
 import Posts from './Components/Posts'
 import AboutMe from './Components/AboutMe'
 import CreatePost from './Components/CreatePost'
-import UpdatePost from './Components/DeletePost'
 
 function App() {
   const [posts, setPosts] = useState([]);
@@ -48,7 +47,6 @@ function App() {
       <Route path="/createposts">
         <CreatePost setFetchPosts= { setFetchPosts }/>
       </Route>
-      <UpdatePost />
       </div>
     </div>
       );

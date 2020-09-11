@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 function CreatePost(props) {
-  const{setFetchPosts} = props
+  const { fetchPosts, setFetchPosts } = props
   const [title, setTitle] = useState('')
   const [text, setText] = useState('');
   const [author, setAuthor] = useState('Anonymous');
@@ -38,6 +38,16 @@ function CreatePost(props) {
     setFetchPosts(prevFetch => !prevFetch)
   }
 
+  const handleDelete = async () => {
+    const airTableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/inforange/`
+    await axios.delete(airTableURL, { 
+        headers: {
+            'Authorization': `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
+        },
+    });
+    setFetchPosts(!fetchPosts);
+}
+
   return (
     <div>
      <form onSubmit={(e) => handleSubmit(e)}>
@@ -51,6 +61,8 @@ function CreatePost(props) {
        <input style={posts} id="author" value={ author } 
        onChange={(e) => setAuthor(e.target.value)}/>
        <button type="submit">Submit Post</button>
+       <button onClick={handleDelete}>Delete Post</button>
+
      </form>
     </div>
   )
