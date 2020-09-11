@@ -6,11 +6,21 @@ import Nav from './Components/Nav'
 import Posts from './Components/Posts'
 import AboutMe from './Components/AboutMe'
 import CreatePost from './Components/CreatePost'
-import UpdatePost from './Components/UpdatePost'
+// import DeletePost from './Components/DeletePost'
 
-function App(props) {
+function App() {
   const [posts, setPosts] = useState([]);
   const [fetchPosts, setFetchPosts] = useState(false);
+
+  const app = {
+    textAlign: 'center',
+    fontFamily: 'Kufam',
+  }
+
+  const newPosts= {
+    border: '10px solid black',
+  }
+
   useEffect(() => {
     const getPosts = async () => {
       const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/inforange`;
@@ -25,7 +35,7 @@ function App(props) {
   }, [fetchPosts]);
 
   return (
-    <div className="App">
+    <div style={app}>
       <Nav />
       <Route path="/aboutme" >
         <AboutMe />
@@ -34,7 +44,7 @@ function App(props) {
       <Posts posts={ posts }/>
       </Route>
       <Route path="/createposts">
-        <CreatePost setFetchPosts= { setFetchPosts }/>
+        <CreatePost  setFetchPosts= { setFetchPosts }/>
       </Route>
     </div>
       );

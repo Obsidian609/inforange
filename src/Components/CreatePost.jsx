@@ -2,10 +2,17 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 function CreatePost(props) {
-  const{setFetchPosts, fetchPosts} = props
+  const{setFetchPosts} = props
   const [title, setTitle] = useState('')
   const [text, setText] = useState('');
   const [author, setAuthor] = useState('Anonymous');
+
+  const posts = {
+    display: 'flex',
+    margin: '20px 530px',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+  }
 
   const createPost = async (fields) => {
     const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/inforange`;
@@ -29,16 +36,16 @@ function CreatePost(props) {
   }
 
   return (
-    <div className="App" className="createpost">
+    <div>
      <form onSubmit={(e) => handleSubmit(e)}>
      <label htmlFor="title">Title</label>
-       <input id="title" value={ title } 
+       <input style={posts} id="title" value={ title } 
        onChange={(e) => setTitle(e.target.value)} />
         <label htmlFor="text">Post</label>
-       <input id="text" value={ text } 
+       <input style={posts} id="text" value={ text } 
        onChange={(e) => setText(e.target.value)} />
         <label htmlFor="author">Author</label>
-       <input id="author" value={ author } 
+       <input style={posts} id="author" value={ author } 
        onChange={(e) => setAuthor(e.target.value)}/>
        <button type="submit">Submit Post</button>
      </form>
