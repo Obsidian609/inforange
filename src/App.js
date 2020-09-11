@@ -6,7 +6,7 @@ import Nav from './Components/Nav'
 import Posts from './Components/Posts'
 import AboutMe from './Components/AboutMe'
 import CreatePost from './Components/CreatePost'
-// import DeletePost from './Components/DeletePost'
+import UpdatePost from './Components/DeletePost'
 
 function App() {
   const [posts, setPosts] = useState([]);
@@ -35,8 +35,9 @@ function App() {
   }, [fetchPosts]);
 
   return (
-    <div style={app}>
+    <div className='app' style={app}>
       <Nav />
+      <div style={newPosts}>
       <Route path="/aboutme" >
         <AboutMe />
       </Route>
@@ -44,8 +45,10 @@ function App() {
       <Posts posts={ posts }/>
       </Route>
       <Route path="/createposts">
-        <CreatePost  setFetchPosts= { setFetchPosts }/>
+        <CreatePost setFetchPosts= { setFetchPosts }/>
       </Route>
+      <UpdatePost />
+      </div>
     </div>
       );
 }

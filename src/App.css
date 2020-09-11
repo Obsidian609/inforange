@@ -1,0 +1,5 @@
+.app {
+    @media screen and (min-width: 680px) {
+        font-weight: 500;
+    }
+}
