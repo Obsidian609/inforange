@@ -3,6 +3,7 @@
 ## Project Description
 
 A blog site to post any information you may want to share or just sit back and read/follow any posts that might catch your eye.
+<br/>
 https://inforange.netlify.app/
 
 ## API and Data Sample
